@@ -1,4 +1,4 @@
-.search {
+input {
   width: 90%;
 }
 
@@ -7,23 +7,20 @@ body {
   font-size: 32px;
 }
 
-.Deals {
+.Deals, .Categories, div.Search {
   padding-left: 5%;
-  width: 90%;
+  padding-right: 5%;
 }
 
 h1 {
   border-bottom: 8px solid #dedede;
 }
 
-.DealItems a {
+.CategoryItems img, .DealItems img {
   width: 30%;
+  background-color: grey;
 }
 
-.Categories {
-  padding-left: 5%;
-  width: 90%;
-}
 ul {
   display: inline-block;
   list-style-type: none;
@@ -40,10 +37,14 @@ li {
   float: left;
 }
 
+li img {
+  width: 100%;
+}
+
 li a {
   display: block;
   color: black:
-  text-align: center;
+  font-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
