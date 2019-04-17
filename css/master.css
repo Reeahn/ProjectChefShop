@@ -1,4 +1,4 @@
-input {
+.Search input{
   width: 90%;
 }
 
@@ -19,6 +19,10 @@ h1 {
 .CategoryItems img, .DealItems img {
   width: 30%;
   background-color: grey;
+}
+
+footer {
+  height: 240px;
 }
 
 ul {
