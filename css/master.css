@@ -76,10 +76,6 @@ li a:visited, li a:link {
   color: black;
 }
 
-li a:active {
-  color: aqua;
-}
-
 .active {
   background-color: grey;
 }
