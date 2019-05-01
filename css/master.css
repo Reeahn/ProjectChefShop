@@ -32,6 +32,10 @@ body {
 }
 
 h1 {
+  text-align: center;
+}
+
+h2 {
   border-bottom: 8px solid #dedede;
 }
 
@@ -67,7 +71,6 @@ li img {
 
 li a {
   display: block;
-  font-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
@@ -77,5 +80,22 @@ li a:visited, li a:link {
 }
 
 .active {
+  color: grey;
   background-color: grey;
+}
+
+.message {
+  height: 120px;
+  margin: 2%;
+  padding: 1%;
+  border: 8px solid grey;
+}
+.message img {
+  display: inline-block;
+  height: 120px;
+}
+.message p {
+  margin: 0 20px;
+  vertical-align: top;
+  display: inline-block;
 }
