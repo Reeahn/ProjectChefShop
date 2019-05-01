@@ -1,6 +1,8 @@
 body {
   font-family: Calibri, Helvetica, sans-serif;
   font-size: 32px;
+  padding: 0;
+  margin: 0;
 }
 
 .Search {
@@ -34,7 +36,7 @@ h1 {
 }
 
 .CategoryItems img, .DealItems img {
-  width: 30%;
+  width: 32%;
   background-color: grey;
 }
 
@@ -43,6 +45,7 @@ footer {
 }
 
 ul {
+  background-color: white;
   display: inline-block;
   list-style-type: none;
   margin: 0;
