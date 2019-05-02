@@ -1,8 +1,22 @@
+/*CSS for all/most pages*/
 body {
   font-family: Calibri, Helvetica, sans-serif;
   font-size: 32px;
   padding: 0;
   margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  border-bottom: 8px solid #dedede;
+}
+
+.active {
+  color: grey;
+  background-color: grey;
 }
 
 .Search {
@@ -25,42 +39,13 @@ body {
 .Search i {
   padding: 0 5%;
 }
-
-.Deals, .Categories {
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-h1 {
-  text-align: center;
-}
-
-h2 {
-  border-bottom: 8px solid #dedede;
-}
-
-.CategoryItems img, .DealItems img {
-  width: 32%;
-  background-color: grey;
-}
-
+/*CSS For Footer and Navbar*/
 footer {
   height: 240px;
 }
 
-ul {
-  background-color: white;
-  display: inline-block;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
 li {
+  display: block;
   width: 20%;
   float: left;
 }
@@ -70,6 +55,7 @@ li img {
 }
 
 li a {
+  text-align: center;
   display: block;
   padding: 14px 16px;
   text-decoration: none;
@@ -79,11 +65,28 @@ li a:visited, li a:link {
   color: black;
 }
 
-.active {
-  color: grey;
-  background-color: grey;
+ul {
+  background-color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
+/*CSS For home.html*/
+.Deals, .Categories {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.CategoryItems img, .DealItems img {
+  width: 32%;
+  background-color: grey;
+}
+/*CSS For messages.htmel*/
 .message {
   height: 120px;
   margin: 2%;
@@ -98,4 +101,36 @@ li a:visited, li a:link {
   margin: 0 20px;
   vertical-align: top;
   display: inline-block;
+}
+
+/*CSS For history.html*/
+.order {
+  height: 120px;
+  margin: 2%;
+  padding: 1%;
+  border: 8px solid grey;
+}
+
+.order-left {
+  float:left;
+  width: 50%;
+}
+
+.order-right {
+  float: right;
+  width: 50%;
+}
+
+.order-left p {
+  margin: 0;
+  vertical-align: top;
+  display: block;
+  text-align: left;
+}
+
+.order-right p {
+  margin: 0;
+  vertical-align: top;
+  display: block;
+  text-align: right;
 }
