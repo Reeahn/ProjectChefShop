@@ -11,6 +11,8 @@ h1 {
 }
 
 h2 {
+  margin-left: 5%;
+  margin-right: 5%;
   border-bottom: 8px solid #dedede;
 }
 
@@ -19,11 +21,11 @@ h2 {
   background-color: grey;
 }
 
-.Search {
+header {
   padding: 2%;
 }
 
-.Search *{
+header *{
   box-sizing: border-box;
 }
 
@@ -39,6 +41,7 @@ h2 {
 .Search i {
   padding: 0 5%;
 }
+
 /*CSS For Footer and Navbar*/
 footer {
   height: 240px;
@@ -77,15 +80,12 @@ ul {
 }
 
 /*CSS For home.html*/
-.Deals, .Categories {
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
 .CategoryItems img, .DealItems img {
-  width: 32%;
+  margin: 2%;
+  width: 28.33%;
   background-color: grey;
 }
+
 /*CSS For messages.htmel*/
 .message {
   height: 120px;
@@ -123,14 +123,45 @@ ul {
 
 .order-left p {
   margin: 0;
-  vertical-align: top;
   display: block;
   text-align: left;
 }
 
 .order-right p {
   margin: 0;
-  vertical-align: top;
   display: block;
   text-align: right;
+}
+/* CSS For cart.html */
+.carth1 {
+  width: 80%;
+  float: left;
+  margin: 0;
+}
+
+.fa-trash {
+  margin: auto;
+}
+
+.empty {
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  width:30em;
+  height:18em;
+}
+
+.column-left {
+  float: left;
+  width: 10%;
+}
+
+.column-middle {
+  float: left;
+  width: 70%;
+}
+
+.column-right {
+  float: right;
+  width: 10%;
 }
