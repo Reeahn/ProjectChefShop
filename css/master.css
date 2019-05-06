@@ -103,6 +103,11 @@ ul {
   display: inline-block;
 }
 
+.message i {
+  float: right;
+  padding: 0 5%;z
+}
+
 /*CSS For history.html*/
 .order {
   height: 120px;
