@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Shipping Address</title>
+</head>
+<body>
+<form name="ship" method="post" action="login.php">
+<table width="20%" bgcolor="ffffff" align="center">
+
+<tr>
+<td colspan=2><center><font size=4><b>Shipping Address </b></font></center></td>
+</tr>
+
+<tr>
+<td>Address Line 1</td>
+<td><input type="text" size=25 name="ad"></td>
+</tr>
+
+<tr>
+<td>Address Line 2</td>
+<td><input type="text" size=25 name="ad2"></td>
+</tr>
+
+<tr>
+<td>State</td>
+<td><input type="text" size=25 name="st"></td>
+</tr>
+
+<tr>
+<td>Zip Code</td>
+<td><input type="text" size=25 name="zp"></td>
+</tr>
+
+<tr>
+
+<td><input type="Submit" onclick="return check(this.form)" value="Conitnue"></td>
+</tr>
+
+</table>
+</form>
+<script language="javascript">
+function check(form)
+{
+
+if(form.ad.value == "CDU" && form.ad2.value == "Casuarina" && form.st.value == "NT" && form.zp.value == "0810")
+{
+	return true;
+}
+else
+{
+	alert("Address update")
+	return false;
+}
+}
+</script>
+
+</body>
+</html>

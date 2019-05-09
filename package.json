@@ -1,0 +1,18 @@
+{
+  "name": "chefshop",
+  "version": "1.0.0",
+  "description": "ProjectChefShop",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "author": "The Simple Team",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
