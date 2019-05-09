@@ -10,7 +10,6 @@
   "author": "The Simple Team",
   "license": "ISC",
   "dependencies": {
-    "mysql2": "^1.6.5",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
