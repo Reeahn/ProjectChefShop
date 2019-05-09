@@ -60,7 +60,8 @@ h2 {
   position: relative;
   background-color: white;
   padding-top: 20px;
-  margin-left: 15px;
+  margin-left: 20px;
+  color: black;
 }
 
 .SearchD input[type=text]{
@@ -78,6 +79,14 @@ h2 {
   margin-left: 20px;
 }
 
+/*History*/
+
+.orderdate h2{
+  color: black;
+  border: 0px;
+  margin-left: 20%;
+
+}
 
 /*CSS For Footer and Navbar*/
 footer {
