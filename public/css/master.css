@@ -386,3 +386,7 @@ a {
     border-radius: 0px;
   }
 }
+
+.hidden {
+  display: none;
+}
