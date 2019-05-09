@@ -1,23 +1,41 @@
-// get the client
-const mysql = require('mysql2');
- 
-// create the connection to database
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  database: 'artwork_db'
-});
- 
-// execute will internally call prepare and query
-connection.execute(
-  'SELECT * FROM `customer`',
-  function(err, results, fields) {
-    console.log(fields);
-    console.log(results); // results contains rows returned by server
- 
-    // If you execute same statement again, it will be picked from a LRU cache
-    // which will save query preparation time and give better performance
-  }
-);
+// Code from https://www.youtube.com/watch?v=1iysNUrI3lw
+const search = document.getElementById("search");
+const matchList = document.getElementById("match-list");
 
-connection.end();
+// Search Products.json and filter it
+const searchProducts = async searchText => {
+  const res = await fetch("../data/products.json");
+  const products = await res.json();
+
+  // Get matches to current text input
+  let matches = products.filter(product => {
+    const regex = new RegExp(`^${searchText}`, "gi");
+    return product.prodName.match(regex) || product.type.match(regex);
+  });
+
+  if (searchText.length === 0) {
+    matches = [];
+    matchList.innerHTML = "";
+  }
+
+  outputHtml(matches);
+};
+
+// Show results in HTML
+const outputHtml = matches => {
+  if (matches.length > 0) {
+    const html = matches
+      .map(
+        match => `
+        <div class="">
+            <h4>${match.prodName} <span class="">$${match.price}
+            </span></h4>
+        </div>`
+      )
+      .join("");
+
+    matchList.innerHTML = html;
+  }
+};
+
+search.addEventListener("input", () => searchProducts(search.value));
