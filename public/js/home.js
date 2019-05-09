@@ -19,8 +19,6 @@ const outputHtml1 = products => {
       )
       .join("");
     deals.innerHTML += html;
-    console.log(html);
-    console.log(deals.innerHTML);
   }
 };
 
