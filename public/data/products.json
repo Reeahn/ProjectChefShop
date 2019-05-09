@@ -3,18 +3,21 @@
     "id": 1,
     "prodName": "Capsicum",
     "type": "vegetable",
-    "price": 2.5
+    "price": 2.5,
+    "img": "./imgs/capsicum.png"
   },
   {
     "id": 2,
     "prodName": "Tomato",
     "type": "vegetable",
-    "price": 2.5
+    "price": 2.5,
+    "img": "./imgs/capsicum.png"
   },
   {
     "id": 3,
     "prodName": "Beef",
     "type": "meat",
-    "price": 3.5
+    "price": 3.5,
+    "img": "./imgs/capsicum.png"
   }
 ]
