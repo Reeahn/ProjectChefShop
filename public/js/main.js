@@ -15,6 +15,26 @@ function showDisplay(element) {
   element.classList.remove("hidden");
 }
 
+// Increase input value
+function increaseValue() {
+  const num = document.getElementById("number").value;
+  if (num >= 99){
+    document.getElementById("number").value = 99;
+  } else {
+    document.getElementById("number").value += 1;
+  }
+}
+
+// Decrease input value
+function decreaseValue() {
+  const num = document.getElementById("number").value;
+  if (num <= 0){
+    document.getElementById("number").value = 0;
+  } else {
+    document.getElementById("number").value -= 1;
+  }
+}
+
 // Get products
 const getProducts = async () => {
   const res = await fetch("../data/products.json");
