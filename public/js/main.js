@@ -18,7 +18,7 @@ function showDisplay(element) {
 // Increase input value
 function increaseValue() {
   const num = document.getElementById("number").value;
-  if (num >= 99){
+  if (num >= 99) {
     document.getElementById("number").value = 99;
   } else {
     document.getElementById("number").value += 1;
@@ -28,7 +28,7 @@ function increaseValue() {
 // Decrease input value
 function decreaseValue() {
   const num = document.getElementById("number").value;
-  if (num <= 0){
+  if (num <= 0) {
     document.getElementById("number").value = 0;
   } else {
     document.getElementById("number").value -= 1;

@@ -13,7 +13,7 @@ const outputHtml1 = products => {
     const html = products
       .map(
         product =>
-          `
+        `
         <a href="#"><img src="${product.img}" alt="${product.prodName}"/></a>
         `
       )

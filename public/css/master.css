@@ -56,7 +56,7 @@ h2 {
 /*Deal page header*/
 
 
-.SearchD input[type=text]{
+.SearchD input[type=text] {
   border-radius: 50px;
   padding: 2%;
   font-size: 50px;
@@ -66,6 +66,7 @@ h2 {
   margin-right: 15px;
   margin-top: 18px;
 }
+
 .SearchD i {
   margin-top: 25px;
   margin-left: 20px;
@@ -73,7 +74,7 @@ h2 {
 
 /*History*/
 
-.orderdate h2{
+.orderdate h2 {
   color: black;
   border: 0px;
   margin-left: 20%;
@@ -133,15 +134,18 @@ ul {
   padding: 1%;
   border: 8px solid grey;
 }
+
 .message img {
   display: inline-block;
   height: 120px;
 }
+
 .message p {
   margin: 0 20px;
   vertical-align: top;
   display: inline-block;
 }
+
 /*CSS For history.html*/
 .order {
   height: 120px;
@@ -171,6 +175,7 @@ ul {
   display: block;
   text-align: right;
 }
+
 /* CSS For cart.html */
 .carth1 {
   width: 60%;
@@ -182,9 +187,11 @@ ul {
 .fa-trash {
   margin-top: 25px;
 }
+
 .shopping-cart {
   margin: 0 5%;
 }
+
 .shopping-cart h2 {
   margin: 5% 0;
 }
@@ -225,6 +232,7 @@ ul {
   margin: auto;
   width: 15%;
 }
+
 /*CSS for account.html*/
 .fa-angle-right {
   float: right;
@@ -306,6 +314,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .deals {
   font-size: 30px;
 }
+
 /*login*/
 
 .main {
