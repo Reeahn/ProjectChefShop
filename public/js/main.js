@@ -85,7 +85,7 @@ const outputHtml = matches => {
               >
                 -
               </div>
-              <input type="number" id="number" value="0" />
+              <input type="number" id="number" value=0 />
               <div
                 class="value-button"
                 id="increase"
