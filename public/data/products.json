@@ -1,30 +1,33 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "prodName": "Capsicum",
     "type": "vegetable",
+    "typeimg": "./imgs/test.png",
     "price": 2.5,
     "img": "./imgs/capsicum.png"
   },
   {
-    "id": 2,
+    "id": "2",
     "prodName": "Tomato",
     "type": "vegetable",
+    "typeimg": "./imgs/test.png",
     "price": 2.5,
-    "img": "./imgs/capsicum.png",
-    "deal": true
+    "img": "./imgs/capsicum.png"
   },
   {
-    "id": 3,
+    "id": "3",
     "prodName": "Beef",
     "type": "meat",
+    "typeimg": "./imgs/test.png",
     "price": 3.5,
     "img": "./imgs/capsicum.png"
   },
   {
-    "id": 4,
+    "id": "4",
     "prodName": "Corn",
     "type": "Vegetable",
+    "typeimg": "./imgs/test.png",
     "price": 3.5,
     "img": "./imgs/corn.png"
   }

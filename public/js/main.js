@@ -5,7 +5,6 @@ const dealDiv = document.getElementById("Deals");
 const catDiv = document.getElementById("Categories");
 // const fs = require("fs");
 var cart = [];
-localStorage.setItem("cart", JSON.stringify(cart));
 let products;
 
 // Hide div add hidden class
@@ -19,45 +18,46 @@ function showDisplay(element) {
 }
 
 // Increase input value
-function increaseValue() {
-  const num = inputSanitise();
+const increaseValue = element => {
+  const num = inputSanitise(element);
   if (num >= 99) {
-    document.getElementById("number").value = 99;
+    document.getElementById(element).value = 99;
   } else {
-    document.getElementById("number").value = num + 1;
+    document.getElementById(element).value = num + 1;
   }
-}
+};
 
 // ToDo Sanitise Input checking if invalid and setting to 0
-const inputSanitise = input => {
+const inputSanitise = element => {
   try {
-    input = parseInt(document.getElementById("number").value, 10);
+    const input = parseFloat(document.getElementById(element).value, 10);
     return input;
   } catch (err) {
-    document.getElementById("number").value = 0;
-    input = parseInt(document.getElementById("number").value, 10);
+    document.getElementById(element).value = 0;
+    input = parseInt(document.getElementById(element).value, 10);
     return input;
   }
 };
 
 // Decrease input value
-function decreaseValue() {
-  const num = inputSanitise();
+const decreaseValue = element => {
+  const num = inputSanitise(element);
   if (num <= 0) {
-    document.getElementById("number").value = 0;
+    document.getElementById(element).value = 0;
   } else {
-    document.getElementById("number").value -= 1;
+    document.getElementById(element).value -= 1;
     console.log(products);
   }
-}
+};
 
 // Add product to the cart
 const addToCart = id => {
-  const num = inputSanitise();
+  const num = inputSanitise(id + "quantity");
   if (num > 0 && num <= 99) {
-    cart.push(id, num);
+    cart.push({ id: id, quantity: num });
+    localStorage.setItem("cart", JSON.stringify(cart));
   }
-  cart.push(id, num);
+  console.log(localStorage.getItem("cart"));
   console.log(cart);
 };
 
@@ -97,7 +97,7 @@ const outputHtml = matches => {
     <div class="DealItems">
         <div class="cart-itemD">
           <div class="column-left">
-            <img src="${match.img}" alt="food-icon" />
+            <img src="${match.img}" alt="${match.prodName}-icon" />
           </div>
           <div class="column-middle">
             <p>${match.prodName}</p>
@@ -106,16 +106,18 @@ const outputHtml = matches => {
               <div
                 class="value-button"
                 id="decrease"
-                onclick="decreaseValue()"
+                onclick="decreaseValue('${match.id}quantity')"
                 value="Decrease Value"
               >
                 -
               </div>
-              <input type="number" id="number" value=0 />
+              <input type="number" class="number" id="${
+                match.id
+              }quantity" value=0 />
               <div
                 class="value-button"
                 id="increase"
-                onclick="increaseValue()"
+                onclick="increaseValue('${match.id}quantity')"
                 value="Increase Value"
               >
                 +

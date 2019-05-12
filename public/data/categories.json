@@ -1,0 +1,26 @@
+[
+  {
+    "type": "Vegetables",
+    "img": "./imgs/test.png"
+  },
+  {
+    "type": "Meat",
+    "img": "./imgs/test.png"
+  },
+  {
+    "type": "Bakery",
+    "img": "./imgs/test.png"
+  },
+  {
+    "type": "Fruit",
+    "img": "./imgs/test.png"
+  },
+  {
+    "type": "Seafood",
+    "img": "./imgs/test.png"
+  },
+  {
+    "type": "Drinks",
+    "img": "./imgs/test.png"
+  }
+]
