@@ -2,7 +2,7 @@ const deals = document.getElementById("DealItems");
 
 // Get products
 const getProducts1 = async () => {
-  const res = await fetch("../data/products.json");
+  const res = await fetch("./data/products.json");
   products = await res.json();
   outputHtml1(products);
 };
@@ -13,7 +13,7 @@ const outputHtml1 = products => {
     const html = products
       .map(
         product =>
-        `
+          `
         <a href="#"><img src="${product.img}" alt="${product.prodName}"/></a>
         `
       )

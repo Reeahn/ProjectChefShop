@@ -4,6 +4,7 @@ const matchList = document.getElementById("match-list");
 const dealDiv = document.getElementById("Deals");
 const catDiv = document.getElementById("Categories");
 // const fs = require("fs");
+var cart = [];
 let products;
 
 // Hide div add hidden class
@@ -26,35 +27,38 @@ function increaseValue() {
   }
 }
 
-// Sanitise Input checking if invalid and setting to 0
+// ToDo Sanitise Input checking if invalid and setting to 0
 const inputSanitise = input => {
   try {
     input = parseInt(document.getElementById("number").value, 10);
-  } catch(err) {
+    return input;
+  } catch (err) {
     document.getElementById("number").value = 0;
-  }
-  
-  if (input === NaN) {
-    console.log(input)
-    document.getElementById("number").value = 0;
-  } else {
+    input = parseInt(document.getElementById("number").value, 10);
     return input;
   }
-}
+};
 
 // Decrease input value
 function decreaseValue() {
-  const num = inputSanitise();  
+  const num = inputSanitise();
   if (num <= 0) {
     document.getElementById("number").value = 0;
   } else {
     document.getElementById("number").value -= 1;
+    console.log(products);
   }
 }
 
+// Add product to the cart
+const addToCart = id => {
+  cart.push(id, inputSanitise());
+  console.log(cart);
+};
+
 // Get products
 const getProducts = async () => {
-  const res = await fetch("../data/products.json");
+  const res = await fetch("./data/products.json");
   products = await res.json();
 };
 
@@ -114,7 +118,9 @@ const outputHtml = matches => {
             </form>
           </div>
           <div class="column-right">
+            <a onclick="addToCart(${match.id})">
             <i class="fa fa-shopping-cart fa-3x" aria-hidden="true"> Add</i>
+            </a>
           </div>
         </div>
    </div>`
