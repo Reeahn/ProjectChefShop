@@ -10,8 +10,6 @@ const getProducts = async () => {
 // Show results in HTML
 const outputHtml = products => {
   const cart = JSON.parse(localStorage.getItem("cart"));
-  console.log(typeof cart)
-  console.log(typeof [])
   var newCart = [],
     newItem = {};
   if (cart === []) {
