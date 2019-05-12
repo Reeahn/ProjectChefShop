@@ -1,4 +1,5 @@
-[{
+[
+  {
     "id": 1,
     "prodName": "Capsicum",
     "type": "vegetable",
@@ -10,7 +11,8 @@
     "prodName": "Tomato",
     "type": "vegetable",
     "price": 2.5,
-    "img": "./imgs/capsicum.png"
+    "img": "./imgs/capsicum.png",
+    "deal": true
   },
   {
     "id": 3,
@@ -18,5 +20,12 @@
     "type": "meat",
     "price": 3.5,
     "img": "./imgs/capsicum.png"
+  },
+  {
+    "id": 4,
+    "prodName": "Corn",
+    "type": "Vegetable",
+    "price": 3.5,
+    "img": "./imgs/corn.png"
   }
 ]

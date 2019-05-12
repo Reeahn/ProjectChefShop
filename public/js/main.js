@@ -5,6 +5,7 @@ const dealDiv = document.getElementById("Deals");
 const catDiv = document.getElementById("Categories");
 // const fs = require("fs");
 var cart = [];
+localStorage.setItem("cart", JSON.stringify(cart));
 let products;
 
 // Hide div add hidden class
@@ -52,7 +53,11 @@ function decreaseValue() {
 
 // Add product to the cart
 const addToCart = id => {
-  cart.push(id, inputSanitise());
+  const num = inputSanitise();
+  if (num > 0 && num <= 99) {
+    cart.push(id, num);
+  }
+  cart.push(id, num);
   console.log(cart);
 };
 
@@ -88,9 +93,9 @@ const outputHtml = matches => {
     hideDisplay(catDiv);
     const html = matches
       .map(
-        match => `<div class="">
-    <h4>${match.prodName} ($${match.price})</h4>
-        <div class="cart-item">
+        match => ` 
+    <div class="DealItems">
+        <div class="cart-itemD">
           <div class="column-left">
             <img src="${match.img}" alt="food-icon" />
           </div>
