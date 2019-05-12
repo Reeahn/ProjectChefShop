@@ -21,7 +21,7 @@ function increaseValue() {
   if (num >= 99) {
     document.getElementById("number").value = 99;
   } else {
-    document.getElementById("number").value += 1;
+    document.getElementById("number").value = num + 1;
   }
 }
 
