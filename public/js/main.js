@@ -53,12 +53,37 @@ const decreaseValue = element => {
 // Add product to the cart
 const addToCart = id => {
   const num = inputSanitise(id + "quantity");
+  var exists = false;
   if (num > 0 && num <= 99) {
-    cart.push({ id: id, quantity: num });
-    localStorage.setItem("cart", JSON.stringify(cart));
+    cart.forEach(function(item) {
+      if (id === item.id) {
+        item.quantity += num;
+        localStorage.setItem("cart", JSON.stringify(cart));
+        exists = true;
+      }
+    });
+    if (exists === false) {
+      cart.push({
+        id: id,
+        quantity: num
+      });
+      localStorage.setItem("cart", JSON.stringify(cart));
+    }
+    swal({
+      title: "Item added",
+      icon: "success"
+    });
+    search.value = "";
+    showDisplay(dealDiv);
+    showDisplay(catDiv);
+    matches = [];
+    matchList.innerHTML = "";
+  } else {
+    swal({
+      title: "Quantity can't be 0!",
+      icon: "warning"
+    });
   }
-  console.log(localStorage.getItem("cart"));
-  console.log(cart);
 };
 
 // Get products
