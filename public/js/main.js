@@ -3,6 +3,7 @@ const search = document.getElementById("search");
 const matchList = document.getElementById("match-list");
 const dealDiv = document.getElementById("Deals");
 const catDiv = document.getElementById("Categories");
+// const fs = require("fs");
 let products;
 
 // Hide div add hidden class
@@ -17,7 +18,7 @@ function showDisplay(element) {
 
 // Increase input value
 function increaseValue() {
-  const num = document.getElementById("number").value;
+  const num = inputSanitise();
   if (num >= 99) {
     document.getElementById("number").value = 99;
   } else {
@@ -25,9 +26,25 @@ function increaseValue() {
   }
 }
 
+// Sanitise Input checking if invalid and setting to 0
+const inputSanitise = input => {
+  try {
+    input = parseInt(document.getElementById("number").value, 10);
+  } catch(err) {
+    document.getElementById("number").value = 0;
+  }
+  
+  if (input === NaN) {
+    console.log(input)
+    document.getElementById("number").value = 0;
+  } else {
+    return input;
+  }
+}
+
 // Decrease input value
 function decreaseValue() {
-  const num = document.getElementById("number").value;
+  const num = inputSanitise();  
   if (num <= 0) {
     document.getElementById("number").value = 0;
   } else {
