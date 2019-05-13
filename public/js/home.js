@@ -21,8 +21,8 @@ const outputHtml1 = products => {
     const html = products
       .map(
         product =>
-          `
-        <a href="#"><img src="${product.img}" alt="${product.prodName}"/></a>
+        `
+        <a onclick="searchProducts('${product.prodName}')"><img src="${product.img}" alt="${product.prodName}"/></a>
         `
       )
       .join("");
@@ -36,7 +36,7 @@ const outputHtml2 = categories => {
     const html = categories
       .map(
         category =>
-          `
+        `
         <a href="#"><img src="${category.img}" alt="${category.type}"/></a>
         `
       )

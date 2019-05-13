@@ -37,6 +37,11 @@ h2 {
   color: black;
 }
 
+.SearchSmall {
+  width: 52%;
+  padding-left: 0;
+}
+
 .Search input[type="text"] {
   border-radius: 50px;
   padding: 2%;
