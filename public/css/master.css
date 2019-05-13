@@ -223,6 +223,10 @@ ul {
   width: 20%;
 }
 
+.column-left img {
+  width: 100%;
+}
+
 .column-middle {
   display: inline-block;
   padding-left: 2.5%;
