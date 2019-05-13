@@ -124,7 +124,7 @@
   "prodName": "Onions",
   "type": "Vegetable",
   "typeimg": "./imgs/test.png",
-  "price": 2.0
+  "price": 2.0,
   "img": "./imgs/Onions.png"
 },
 {
