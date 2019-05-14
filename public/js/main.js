@@ -4,6 +4,7 @@ const matchList = document.getElementById("match-list");
 const dealDiv = document.getElementById("Deals");
 const catDiv = document.getElementById("Categories");
 const header = document.getElementById("searchDiv");
+const backButton = document.getElementById("back");
 // const fs = require("fs");
 var cart = [];
 let products;
@@ -103,10 +104,8 @@ const searchProducts = searchText => {
 
   // Clear when input or matches are empty
   if (searchText.length === 0) {
-    showDisplay(dealDiv);
-    showDisplay(catDiv);
+    clearMatchListDiv();
     matches = [];
-    matchList.innerHTML = "";
   }
 
   outputHtml(matches);
@@ -160,19 +159,20 @@ const outputHtml = matches => {
       )
       .join("");
     matchList.innerHTML = html;
-    addBackButton();
+    // addBackButton();
   }
 };
 
-const addBackButton = () => {
-  header.innerHTML = `
-  <div class="bk-btn">
-    <a href="./home.html"><i class="fa fa-angle-left fa-4x"></i></a>
-  </div>
-  <input class="SearchSmall" type="text" placeholder="Search" name="name" id="search" />
-  <i class="fa fa-microphone fa-4x"></i>
-  `;
+const clearMatchListDiv = () => {
+  showDisplay(dealDiv);
+  showDisplay(catDiv);
+  hideDisplay(backButton);
+  matchList.innerHTML = "";
 }
+
+const addBackButton = () => {
+  showDisplay(backButton)
+};
 
 window.addEventListener("DOMContentLoaded", getProducts);
 search.addEventListener("input", () => searchProducts(search.value));

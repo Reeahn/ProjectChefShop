@@ -22,7 +22,7 @@ const outputHtml1 = products => {
       .map(
         product =>
         `
-        <a onclick="searchProducts('${product.prodName}')"><img src="${product.img}" alt="${product.prodName}"/></a>
+        <a onclick="searchProducts('${product.prodName}');addBackButton()"><img src="${product.img}" alt="${product.prodName}"/></a>
         `
       )
       .join("");
