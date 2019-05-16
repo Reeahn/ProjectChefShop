@@ -60,7 +60,7 @@
     "type": "meat",
     "typeimg": "./imgs/test.png",
     "price": 6.5,
-    "img": "./imgs/Lamp%20Chop.png"
+    "img": "./imgs/LampChop.png"
   },
   {
     "id": "9",
@@ -124,7 +124,7 @@
     "type": "Vegetable",
     "typeimg": "./imgs/test.png",
     "price": 2.0,
-    "img": "./imgs/Onions.png"
+    "img": "./imgs/onions.png"
   },
   {
     "id": "17",
@@ -164,7 +164,7 @@
     "type": "Drinks",
     "typeimg": "./imgs/test.png",
     "price": 3.5,
-    "img": "./imgs/Orange%20Juice.png"
+    "img": "./imgs/OrangeJuice.png"
   },
   {
     "id": "21",
@@ -172,7 +172,7 @@
     "type": "Drinks",
     "typeimg": "./imgs/test.png",
     "price": 3.5,
-    "img": "./imgs/Mango%20Juice.png"
+    "img": "./imgs/MangoJuice.png"
   },
   {
     "id": "22",
@@ -180,7 +180,7 @@
     "type": "Drinks",
     "typeimg": "./imgs/test.png",
     "price": 3.5,
-    "img": "./imgs/Apple%20Juice.png"
+    "img": "./imgs/AppleJuice.png"
   },
   {
     "id": "23",
@@ -188,7 +188,7 @@
     "type": "Drinks",
     "typeimg": "./imgs/test.png",
     "price": 3.5,
-    "img": "./imgs/Tropical%20Juice.png"
+    "img": "./imgs/TropicalJuice.png"
   },
   {
     "id": "24",
@@ -196,7 +196,7 @@
     "type": "Drinks",
     "typeimg": "./imgs/test.png",
     "price": 4.0,
-    "img": "./imgs/Iced%20Coffee.png"
+    "img": "./imgs/IcedCoffee.png"
   },
   {
     "id": "25",
@@ -204,7 +204,7 @@
     "type": "Sweets",
     "typeimg": "./imgs/test.png",
     "price": 3.5,
-    "img": "./imgs/Potatoes%20Chips.png"
+    "img": "./imgs/PotatoesChips.png"
   },
   {
     "id": "26",
@@ -236,7 +236,7 @@
     "type": "Sweets",
     "typeimg": "./imgs/test.png",
     "price": 3.5,
-    "img": "./imgs/Kit%20kat.png"
+    "img": "./imgs/Kitkat.png"
 
   },
   {
