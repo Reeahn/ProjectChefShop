@@ -20,6 +20,10 @@
     "img": "./imgs/test.png"
   },
   {
+    "type": "Sweets",
+    "img": "./imgs/test.png"
+  },
+  {
     "type": "Drinks",
     "img": "./imgs/test.png"
   }
