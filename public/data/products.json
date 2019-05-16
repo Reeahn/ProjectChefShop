@@ -1,5 +1,4 @@
-[
-  {
+[{
     "id": "1",
     "prodName": "Capsicum",
     "type": "vegetable",
@@ -47,203 +46,205 @@
     "price": 3.0,
     "img": "./imgs/Flour.png"
   },
-{
-  "id": "7",
-  "prodName": "Sugar",
-  "type": "Bakery",
-  "typeimg": "./imgs/test.png",
-  "price": 3.0,
-  "img": "./imgs/Sugar.png"
-},
-{
-  "id": "8",
-  "prodName": "Lamp Chops",
-  "type": "meat",
-  "typeimg": "./imgs/test.png",
-  "price": 6.5,
-  "img": "./imgs/Lamp Chop.png"
-},
-{
-  "id": "9",
-  "prodName": "steak",
-  "type": "meat",
-  "typeimg": "./imgs/test.png",
-  "price": 7.5,
-  "img": "./imgs/Steak.png"
-},
-{
-  "id": "10",
-  "prodName": "Chicken",
-  "type": "meat",
-  "typeimg": "./imgs/test.png",
-  "price": 4.0,
-  "img": "./imgs/Chicken.png"
-},
-{
-  "id": "11",
-  "prodName": "Sausage",
-  "type": "meat",
-  "typeimg": "./imgs/test.png",
-  "price": 3.5,
-  "img": "./imgs/Sausage.png"
-},
-{
-  "id": "12",
-  "prodName": "Pork",
-  "type": "meat",
-  "typeimg": "./imgs/test.png",
-  "price": 5.5,
-  "img": "./imgs/Pork.png"
-},
-{
-  "id": "13",
-  "prodName": "Carrot",
-  "type": "Vegetable",
-  "typeimg": "./imgs/test.png",
-  "price": 2.5,
-  "img": "./imgs/Carrot.png"
-},
-{
-  "id": "14",
-  "prodName": "Cabbage",
-  "type": "Vegetable",
-  "typeimg": "./imgs/test.png",
-  "price": 3.0,
-  "img": "./imgs/Cabbage.png"
-},
-{
-  "id": "15",
-  "prodName": "Lettuce",
-  "type": "Vegetable",
-  "typeimg": "./imgs/test.png",
-  "price": 3.5,
-  "img": "./imgs/Lettuce.png"
-},
-{
-  "id": "16",
-  "prodName": "Onions",
-  "type": "Vegetable",
-  "typeimg": "./imgs/test.png",
-  "price": 2.0,
-  "img": "./imgs/Onions.png"
-},
-{
-  "id": "17",
-  "prodName": "Avocado",
-  "type": "Vegetable",
-  "typeimg": "./imgs/test.png",
-  "price": 5.5,
-  "img": "./imgs/Avocado.png"
-},
-{  "id": "18",
-  "prodName": "Cucumber",
-  "type": "Vegetable",
-  "typeimg": "./imgs/test.png",
-  "price": 3.5,
-  "img": "./imgs/Cucumber.png"
-},
-{
-  "id": "19",
-  "prodName": "Cocacola",
-  "type": "Drinks",
-  "typeimg": "./imgs/test.png",
-  "price": 3.0,
-  "img": "./imgs/Cocacola.png"
-},
-{
-  "id": "20",
-  "prodName": "Sprite",
-  "type": "Drinks",
-  "typeimg": "./imgs/test.png",
-  "price": 3.0,
-  "img": "./imgs/Sprite.png"
-},
-{
-  "id": "21",
-  "prodName": "Orange Juice",
-  "type": "Drinks",
-  "typeimg": "./imgs/test.png",
-  "price": 3.5,
-  "img": "./imgs/Orange Juice.png"
-},
-{
-  "id": "21",
-  "prodName": "Mango Juice",
-  "type": "Drinks",
-  "typeimg": "./imgs/test.png",
-  "price": 3.5,
-  "img": "./imgs/Mango Juice.png"
-},
-{
-  "id": "22",
-  "prodName": "Apple Juice",
-  "type": "Drinks",
-  "typeimg": "./imgs/test.png",
-  "price": 3.5,
-  "img": "./imgs/Apple Juice.png"
-},
-{
-  "id": "23",
-  "prodName": "Tropical Juice",
-  "type": "Drinks",
-  "typeimg": "./imgs/test.png",
-  "price": 3.5,
-  "img": "./imgs/Tropical Juice.png"
-},
-{
-  "id": "24",
-  "prodName": "Iced Coffee",
-  "type": "Drinks",
-  "typeimg": "./imgs/test.png",
-  "price": 4.0,
-  "img": "./imgs/Iced Coffee.png"
-},
-{
-  "id": "25",
-  "prodName": "Potatoes Chips",
-  "type": "Sweets",
-  "typeimg": "./imgs/test.png",
-  "price": 3.5,
-  "img": "./imgs/Potatoes Chips.png"
-},
-{
-  "id": "26",
-  "prodName": "Popcorn",
-  "type": "Sweets",
-  "typeimg": "./imgs/test.png",
-  "price": 3.0,
-  "img": "./imgs/Popcorn.png"
-},
-{
-  "id": "27",
-  "prodName": "Crackers",
-  "type": "Bakery",
-  "typeimg": "./imgs/test.png",
-  "price": 2.5,
-  "img": "./imgs/Crackers.png"
-},
-{
-  "id": "28",
-  "prodName": "Peanuts",
-  "type": "Fruit",
-  "typeimg": "./imgs/test.png",
-  "price": 3.0,
-  "img": "./imgs/Peanuts.png"
-},
-{
-  "id": "29",
-  "prodName": "Kit kat",
-  "type": "Sweets",
-  "typeimg": "./imgs/test.png",
-  "price": 3.5,
-  "img": "./imgs/Kit kat.png"
+  {
+    "id": "7",
+    "prodName": "Sugar",
+    "type": "Bakery",
+    "typeimg": "./imgs/test.png",
+    "price": 3.0,
+    "img": "./imgs/Sugar.png"
+  },
+  {
+    "id": "8",
+    "prodName": "Lamb Chops",
+    "type": "meat",
+    "typeimg": "./imgs/test.png",
+    "price": 6.5,
+    "img": "./imgs/Lamp%20Chop.png"
+  },
+  {
+    "id": "9",
+    "prodName": "steak",
+    "type": "meat",
+    "typeimg": "./imgs/test.png",
+    "price": 7.5,
+    "img": "./imgs/Steak.png"
+  },
+  {
+    "id": "10",
+    "prodName": "Chicken",
+    "type": "meat",
+    "typeimg": "./imgs/test.png",
+    "price": 4.0,
+    "img": "./imgs/Chicken.png"
+  },
+  {
+    "id": "11",
+    "prodName": "Sausage",
+    "type": "meat",
+    "typeimg": "./imgs/test.png",
+    "price": 3.5,
+    "img": "./imgs/Sausage.png"
+  },
+  {
+    "id": "12",
+    "prodName": "Pork",
+    "type": "meat",
+    "typeimg": "./imgs/test.png",
+    "price": 5.5,
+    "img": "./imgs/Pork.png"
+  },
+  {
+    "id": "13",
+    "prodName": "Carrot",
+    "type": "Vegetable",
+    "typeimg": "./imgs/test.png",
+    "price": 2.5,
+    "img": "./imgs/Carrot.png"
+  },
+  {
+    "id": "14",
+    "prodName": "Cabbage",
+    "type": "Vegetable",
+    "typeimg": "./imgs/test.png",
+    "price": 3.0,
+    "img": "./imgs/Cabbage.png"
+  },
+  {
+    "id": "15",
+    "prodName": "Lettuce",
+    "type": "Vegetable",
+    "typeimg": "./imgs/test.png",
+    "price": 3.5,
+    "img": "./imgs/Lettuce.png"
+  },
+  {
+    "id": "16",
+    "prodName": "Onions",
+    "type": "Vegetable",
+    "typeimg": "./imgs/test.png",
+    "price": 2.0,
+    "img": "./imgs/Onions.png"
+  },
+  {
+    "id": "17",
+    "prodName": "Avocado",
+    "type": "Vegetable",
+    "typeimg": "./imgs/test.png",
+    "price": 5.5,
+    "img": "./imgs/Avocado.png"
+  },
+  {
+    "id": "18",
+    "prodName": "Cucumber",
+    "type": "Vegetable",
+    "typeimg": "./imgs/test.png",
+    "price": 3.5,
+    "img": "./imgs/Cucumber.png"
+  },
+  {
+    "id": "19",
+    "prodName": "Cocacola",
+    "type": "Drinks",
+    "typeimg": "./imgs/test.png",
+    "price": 3.0,
+    "img": "./imgs/Cocacola.png"
+  },
+  {
+    "id": "20",
+    "prodName": "Sprite",
+    "type": "Drinks",
+    "typeimg": "./imgs/test.png",
+    "price": 3.0,
+    "img": "./imgs/Sprite.png"
+  },
+  {
+    "id": "21",
+    "prodName": "Orange Juice",
+    "type": "Drinks",
+    "typeimg": "./imgs/test.png",
+    "price": 3.5,
+    "img": "./imgs/Orange%20Juice.png"
+  },
+  {
+    "id": "21",
+    "prodName": "Mango Juice",
+    "type": "Drinks",
+    "typeimg": "./imgs/test.png",
+    "price": 3.5,
+    "img": "./imgs/Mango%20Juice.png"
+  },
+  {
+    "id": "22",
+    "prodName": "Apple Juice",
+    "type": "Drinks",
+    "typeimg": "./imgs/test.png",
+    "price": 3.5,
+    "img": "./imgs/Apple%20Juice.png"
+  },
+  {
+    "id": "23",
+    "prodName": "Tropical Juice",
+    "type": "Drinks",
+    "typeimg": "./imgs/test.png",
+    "price": 3.5,
+    "img": "./imgs/Tropical%20Juice.png"
+  },
+  {
+    "id": "24",
+    "prodName": "Iced Coffee",
+    "type": "Drinks",
+    "typeimg": "./imgs/test.png",
+    "price": 4.0,
+    "img": "./imgs/Iced%20Coffee.png"
+  },
+  {
+    "id": "25",
+    "prodName": "Potatoes Chips",
+    "type": "Sweets",
+    "typeimg": "./imgs/test.png",
+    "price": 3.5,
+    "img": "./imgs/Potatoes%20Chips.png"
+  },
+  {
+    "id": "26",
+    "prodName": "Popcorn",
+    "type": "Sweets",
+    "typeimg": "./imgs/test.png",
+    "price": 3.0,
+    "img": "./imgs/Popcorn.png"
+  },
+  {
+    "id": "27",
+    "prodName": "Crackers",
+    "type": "Bakery",
+    "typeimg": "./imgs/test.png",
+    "price": 2.5,
+    "img": "./imgs/Crackers.png"
+  },
+  {
+    "id": "28",
+    "prodName": "Peanuts",
+    "type": "Fruit",
+    "typeimg": "./imgs/test.png",
+    "price": 3.0,
+    "img": "./imgs/Peanuts.png"
+  },
+  {
+    "id": "29",
+    "prodName": "Kit kat",
+    "type": "Sweets",
+    "typeimg": "./imgs/test.png",
+    "price": 3.5,
+    "img": "./imgs/Kit%20kat.png"
 
-},
-{
-  "id": "30",
-  "prodName": "Snickers",
-  "type": "Sweets",
-  "typeimg": "./imgs/test.png",
-  "price": 3.5,
-  "img": "./imgs/Snickers.png"
-}]
+  },
+  {
+    "id": "30",
+    "prodName": "Snickers",
+    "type": "Sweets",
+    "typeimg": "./imgs/test.png",
+    "price": 3.5,
+    "img": "./imgs/Snickers.png"
+  }
+]
