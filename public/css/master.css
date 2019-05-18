@@ -66,8 +66,8 @@ h2 {
   font-size: 50px;
   border: 4px solid black;
   float: left;
-  width: 67%;
-  margin-right: 15px;
+  width: 65%;
+  margin-right: 10px;
   margin-top: 18px;
 }
 
@@ -129,6 +129,7 @@ ul {
   width: 28.33%;
   background-color: grey;
 }
+
 
 /*CSS For messages.htmel*/
 .message {
@@ -213,6 +214,7 @@ ul {
   border: 0px;
 }
 
+
 .column-left,
 .column-right,
 .column-middle {
@@ -225,20 +227,43 @@ ul {
 
 .column-left img {
   width: 100%;
+  height: 160px;
+  padding: 0px;
 }
 
-.column-middle {
+.column-middle1 {
   display: inline-block;
-  padding-left: 2.5%;
-  margin: 0;
-  width: 55%;
+  width: 35%;
   border-left: 4px solid black;
+  font-size: 40px;
+  line-height: normal;
+  height: 160px;
+  flex-flow: row;
+  position: absolute;
+  padding-left: 10px;
+}
+
+.column-middle1 p{
+  margin-top: 10px;
+}
+
+.column-middle2 {
+  display: inline-block;
+  margin: 0px;
+  width: 22%;
+  padding-left: 310px;
+  position: absolute;
+  padding-top: 40px;
+  height: 130px;
   border-right: 4px solid black;
 }
 
 .column-right {
   margin: auto;
-  width: 15%;
+  width: 10%;
+  padding-left: 560px;
+  position: absolute;
+  padding-top: 40px;
 }
 
 /*CSS for account.html*/
@@ -252,27 +277,32 @@ ul {
 .cart-itemD {
   border: 4px solid black;
   width: 92%;
-  margin-left: 4%;
-  margin-right: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-top: 4%;
+  height: 165px;
 }
 
 .valu_button {
-  width: 200px;
+  width: 250px;
   margin: 0;
   text-align: left;
   padding-bottom: 10px;
 }
 
+
 .value-button {
   display: inline-block;
   border: 1px solid #ddd;
   margin: 0px;
-  width: 40px;
-  height: 20px;
+  width: 70px;
+  height: 70px;
+  font-size: 55px;
+  text-indent: inherit;
   text-align: center;
   vertical-align: middle;
-  padding: 11px 0;
+  letter-spacing: 0px;
+  padding: 0px;
   background: #eee;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -280,6 +310,13 @@ ul {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+.number{
+  font-size: 40px;
+}
+
+.valu_button input[type="number"]{
+  height: 60px;
 }
 
 .value-button:hover {
