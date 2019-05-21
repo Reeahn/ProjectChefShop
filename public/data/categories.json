@@ -1,30 +1,30 @@
 [
   {
     "type": "Vegetables",
-    "img": "./imgs/test.png"
+    "img": "./imgs/veg.jpg"
   },
   {
     "type": "Meat",
-    "img": "./imgs/test.png"
+    "img": "./imgs/m.jpg"
   },
   {
     "type": "Bakery",
-    "img": "./imgs/test.png"
+    "img": "./imgs/bake.jpg"
   },
   {
     "type": "Fruit",
-    "img": "./imgs/test.png"
+    "img": "./imgs/fruit.jpg"
   },
   {
     "type": "Seafood",
-    "img": "./imgs/test.png"
+    "img": "./imgs/sea.jpg"
   },
   {
     "type": "Sweets",
-    "img": "./imgs/test.png"
+    "img": "./imgs/swe.jpg"
   },
   {
     "type": "Drinks",
-    "img": "./imgs/test.png"
+    "img": "./imgs/dr.jpg"
   }
 ]
