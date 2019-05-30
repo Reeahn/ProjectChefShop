@@ -124,9 +124,10 @@ const outputHtml = matches => {
           <div class="column-left">
             <img src="${match.img}" alt="${match.prodName}-icon" />
           </div>
-          <div class="column-middle">
+          <div class="column-middle1">
             <p>${match.prodName}</p>
             <p>$${match.price} per KG</p>
+            <div class="cloumn-middle2">
             <form class="valu_button">
               <div
                 class="value-button"
@@ -148,6 +149,7 @@ const outputHtml = matches => {
                 +
               </div>
             </form>
+            </div>
           </div>
           <div class="column-right">
             <a onclick="addToCart(${match.id})">
